@@ -1,0 +1,48 @@
+/**
+ * Copyright (c) 2019 DENSO CORPORATION.
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * Action operator class
+ */
+
+#ifndef RBAACTIONOPERATOR_HPP
+#define RBAACTIONOPERATOR_HPP
+
+#include "RBAOperator.hpp"
+
+namespace rba
+{
+
+class DLL_EXPORT RBAActionOperator : public RBAOperator
+{
+protected:
+  RBAActionOperator()=default;
+  RBAActionOperator(const RBAActionOperator&)=delete;
+  RBAActionOperator(const RBAActionOperator&&)=delete;
+  RBAActionOperator& operator=(const RBAActionOperator&)=delete;
+  RBAActionOperator& operator=(const RBAActionOperator&&)=delete;
+
+public:
+  // Log
+#ifdef RBA_USE_LOG
+  RBAExpressionType getUnderlyingType() const override;
+#endif
+
+};
+
+}
+
+#endif

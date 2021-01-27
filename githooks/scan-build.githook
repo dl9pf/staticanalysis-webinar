@@ -1,0 +1,15 @@
+#!/bin/sh
+
+echo "Running static analysis..."
+# Inspect code using scan-build, will exit 1 when bug is found
+scan-build make -j2
+
+status=$?
+
+if [ "$status" = 0 ] ; then
+    echo "Static analysis found no problems."
+    exit 0
+else
+    echo 1>&2 "Static analysis found violations."
+    exit 1
+fi

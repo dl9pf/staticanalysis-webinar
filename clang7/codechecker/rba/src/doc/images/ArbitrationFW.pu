@@ -1,0 +1,80 @@
+@startuml
+'Define each component'
+package "Arbitration FW" as pac_ARBFW {
+	[Create arbitration results] as CRERES
+	[Creating differential information \nfor arbitration results] as CRERESDIFINFO
+
+	package "Arbitration function" as pac_ARBFUNC {
+		[Arbitration(Core)] as ARBCORE
+		[Re-arbitration, re-arbitration\n of affected area] as REARBAFF
+		[Arbitration policy] as ARBPOLI
+		[Constraint expression] as CONSTEXP
+		() "Content state" as CON_STA
+		() Evaluation
+		() Reassessment
+		() "Policy acquisition" as POL_ACQ
+	}
+
+	package "Cancel or wait function\n when arbitration is lost" as pac_CANWAITFUNC {
+		[Lost action(loser Type)] as LOSTYPE
+		() "Losing action \nevaluation" as LOS_ACT
+	}
+
+	package "Arbitration function \nbetween ECU" as pac_ARBFUNCECU {
+		[Control execution expression] as CONTEXEEXP
+		() Run
+	}
+
+	[Rule definition file\n replacement function] as RULEDEFFILE
+	[Generating rule models] as GENRULEMOD
+	[Rule model definition] as RULEMODDEF
+	[Log output function] as LOGOUTFUNC
+	[OS, PF Non-dependent] as OSPFNON
+	() "Arbitration result" as ARB_RES
+	() "Set content" as SET_CNT
+	() Create
+	() "JSON Reading" as JSON_READ
+	() "Get definition" as GET_DEF
+}
+
+'Adjust location'
+RULEMODDEF -[hidden]u- pac_ARBFUNCECU
+CONTEXEEXP -[hidden]r- ARBCORE
+ARBPOLI -[hidden]r- REARBAFF
+
+'Connect components with lines'
+CRERES -d- ARB_RES
+	CRERESDIFINFO -u-( ARB_RES
+RULEDEFFILE -u- JSON_READ
+	GENRULEMOD --( JSON_READ
+GENRULEMOD -- SET_CNT
+	RULEMODDEF --( SET_CNT
+
+CRERES --( Create
+	ARBCORE -u- Create
+CRERESDIFINFO --( Create
+
+REARBAFF -d- CON_STA
+	ARBPOLI -u-( CON_STA
+
+ARBCORE -d- Reassessment
+	REARBAFF -u-( Reassessment
+ARBCORE -d- POL_ACQ
+	ARBPOLI -u-( POL_ACQ
+ARBCORE -- LOS_ACT
+	LOSTYPE -u-( LOS_ACT
+ARBCORE -u-( Run
+	CONTEXEEXP -- Run
+
+REARBAFF -- Evaluation
+	CONSTEXP -u-( Evaluation
+	ARBCORE -- Evaluation
+	CONTEXEEXP -- Evaluation
+
+RULEMODDEF -d- GET_DEF #0000FF
+	pac_CANWAITFUNC -u-( GET_DEF #0000FF
+	ARBPOLI -u-( GET_DEF #0000FF
+	CONTEXEEXP -u-( GET_DEF #0000FF
+	pac_ARBFUNC -u-( GET_DEF #0000FF
+
+@enduml

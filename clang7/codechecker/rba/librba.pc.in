@@ -1,0 +1,10 @@
+prefix=@CMAKE_INSTALL_PREFIX@
+exec_prefix=${prefix}
+libdir=${exec_prefix}/@CMAKE_INSTALL_LIBDIR@
+includedir=${prefix}/@CMAKE_INSTALL_INCLUDEDIR@/
+
+Name: librba
+Description: rba files
+Version:1.0-r1
+Libs: -L${libdir} -lrba
+Cflags: -I${includedir}

@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\RBAAbstractAllocatable.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAbstractConstraint.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAbstractContent.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAbstractFactory.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAbstractProperty.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAbstractScene.cpp" />
+    <ClCompile Include="..\..\..\src\RBAActionOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAffectInfo.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAllInstanceOfArea.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAllInstanceOfAreaImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAllInstanceOfSoundContent.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAllInstanceOfSoundContentImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAllInstanceOfViewContent.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAllInstanceOfViewContentImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAllInstanceOfZone.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAllInstanceOfZoneImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAllocatable.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAllocatableOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAllocatableSet.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAllocatedContent.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAllocatedContentImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAndOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAndOperatorImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAnimationExecutor.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAnimationManager.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAnimationManagerImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAnimationQueue.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAnimationRequest.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAnimationRequestImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAArbitrator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAArbitratorImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAArea.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAreaImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAreaOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAreaSet.cpp" />
+    <ClCompile Include="..\..\..\src\RBAAreaSetImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAArithmeticOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBABackUpAllocatable.cpp" />
+    <ClCompile Include="..\..\..\src\RBAConstraint.cpp" />
+    <ClCompile Include="..\..\..\src\RBAConstraintImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAConstraintInfo.cpp" />
+    <ClCompile Include="..\..\..\src\RBAContent.cpp" />
+    <ClCompile Include="..\..\..\src\RBAContentOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAContentSet.cpp" />
+    <ClCompile Include="..\..\..\src\RBAContentState.cpp" />
+    <ClCompile Include="..\..\..\src\RBAContentValue.cpp" />
+    <ClCompile Include="..\..\..\src\RBAContentValueImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBACoverageLog.cpp" />
+    <ClCompile Include="..\..\..\src\RBADefeats.cpp" />
+    <ClCompile Include="..\..\..\src\RBADefeatsImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBADisplay.cpp" />
+    <ClCompile Include="..\..\..\src\RBADisplayImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBADisplayingContent.cpp" />
+    <ClCompile Include="..\..\..\src\RBADisplayingContentImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAEventProcessing.cpp" />
+    <ClCompile Include="..\..\..\src\RBAEventProcessingImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAExclusiveOrOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAExclusiveOrOperatorImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAExistsOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAExistsOperatorImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAExpression.cpp" />
+    <ClCompile Include="..\..\..\src\RBAExpressionImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAForAllOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAForAllOperatorImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAGetAllocatables.cpp" />
+    <ClCompile Include="..\..\..\src\RBAGetAllocatablesImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAGetContentsList.cpp" />
+    <ClCompile Include="..\..\..\src\RBAGetContentsListImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAGetProperty.cpp" />
+    <ClCompile Include="..\..\..\src\RBAGetPropertyImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAHasComeEarlierThan.cpp" />
+    <ClCompile Include="..\..\..\src\RBAHasComeEarlierThanImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAHasComeLaterThan.cpp" />
+    <ClCompile Include="..\..\..\src\RBAHasComeLaterThanImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIfActionOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIfActionOperatorImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIfStatement.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIfStatementImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAILogCollector.cpp" />
+    <ClCompile Include="..\..\..\src\RBAImpliesOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAImpliesOperatorImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIntegerPropertyImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIntegerValue.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIntegerValueImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsActive.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsActiveImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsAttenuated.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsAttenuatedImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsCanceled.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsCanceledImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsDefeatedBy.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsDefeatedByImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsDisappeared.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsDisappearedImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsDisplayed.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsDisplayedImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsEqualToOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsEqualToOperatorImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsGreaterThanEqualOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsGreaterThanEqualOperatorImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsGreaterThanOperatorImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsHidden.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsHiddenImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsLowerThanEqualOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsLowerThanEqualOperatorImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsLowerThanOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsLowerThanOperatorImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsMuted.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsMutedImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsOn.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsOnImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsOutputted.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsOutputtedImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsSounding.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsSoundingImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsVisible.cpp" />
+    <ClCompile Include="..\..\..\src\RBAIsVisibleImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAJsonElement.cpp" />
+    <ClCompile Include="..\..\..\src\RBAJsonParser.cpp" />
+    <ClCompile Include="..\..\..\src\RBAJsonParserImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBALambdaContext.cpp" />
+    <ClCompile Include="..\..\..\src\RBALambdaExpression.cpp" />
+    <ClCompile Include="..\..\..\src\RBALambdaExpressionImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBALog.cpp" />
+    <ClCompile Include="..\..\..\src\RBALogicalOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBALogManager.cpp" />
+    <ClCompile Include="..\..\..\src\RBAModel.cpp" />
+    <ClCompile Include="..\..\..\src\RBAModelFactory.cpp" />
+    <ClCompile Include="..\..\..\src\RBAModelImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBANamedElement.cpp" />
+    <ClCompile Include="..\..\..\src\RBANotOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBANotOperatorImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAObject.cpp" />
+    <ClCompile Include="..\..\..\src\RBAObjectCompare.cpp" />
+    <ClCompile Include="..\..\..\src\RBAObjectCompareImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAObjectReference.cpp" />
+    <ClCompile Include="..\..\..\src\RBAObjectReferenceImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAOffScene.cpp" />
+    <ClCompile Include="..\..\..\src\RBAOffSceneImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAOnScene.cpp" />
+    <ClCompile Include="..\..\..\src\RBAOnSceneImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAOrOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAOrOperatorImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAOutputtingSound.cpp" />
+    <ClCompile Include="..\..\..\src\RBAOutputtingSoundImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAPackageableElement.cpp" />
+    <ClCompile Include="..\..\..\src\RBAPlusOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAPlusOperatorImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAPositionContainer.cpp" />
+    <ClCompile Include="..\..\..\src\RBAPositionContainerImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAPostConstraint.cpp" />
+    <ClCompile Include="..\..\..\src\RBAPostConstraintImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAPreviousModifier.cpp" />
+    <ClCompile Include="..\..\..\src\RBAPreviousModifierImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAPropertyOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAResult.cpp" />
+    <ClCompile Include="..\..\..\src\RBAResultImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAResultSet.cpp" />
+    <ClCompile Include="..\..\..\src\RBARollbacker.cpp" />
+    <ClCompile Include="..\..\..\src\RBARule.cpp" />
+    <ClCompile Include="..\..\..\src\RBARuleImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBARuleObject.cpp" />
+    <ClCompile Include="..\..\..\src\RBAScene.cpp" />
+    <ClCompile Include="..\..\..\src\RBASceneCondition.cpp" />
+    <ClCompile Include="..\..\..\src\RBASceneConditionImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBASceneImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBASceneOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBASetExpression.cpp" />
+    <ClCompile Include="..\..\..\src\RBASetOfOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBASetOfOperatorImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBASetOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBASetProperty.cpp" />
+    <ClCompile Include="..\..\..\src\RBASetPropertyImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBASize.cpp" />
+    <ClCompile Include="..\..\..\src\RBASizeImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBASoundContent.cpp" />
+    <ClCompile Include="..\..\..\src\RBASoundContentImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBASoundContentOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBASoundContentSet.cpp" />
+    <ClCompile Include="..\..\..\src\RBASoundContentSetImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBASoundContentState.cpp" />
+    <ClCompile Include="..\..\..\src\RBASoundContentStateImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAStateValue.cpp" />
+    <ClCompile Include="..\..\..\src\RBAStateValueImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAValueExpression.cpp" />
+    <ClCompile Include="..\..\..\src\RBAVariable.cpp" />
+    <ClCompile Include="..\..\..\src\RBAVariableImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAViewAction.cpp" />
+    <ClCompile Include="..\..\..\src\RBAViewContent.cpp" />
+    <ClCompile Include="..\..\..\src\RBAViewContentImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAViewContentOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAViewContentSet.cpp" />
+    <ClCompile Include="..\..\..\src\RBAViewContentSetImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAViewContentState.cpp" />
+    <ClCompile Include="..\..\..\src\RBAViewContentStateImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAViewMove.cpp" />
+    <ClCompile Include="..\..\..\src\RBAViewTransition.cpp" />
+    <ClCompile Include="..\..\..\src\RBAZone.cpp" />
+    <ClCompile Include="..\..\..\src\RBAZoneImpl.cpp" />
+    <ClCompile Include="..\..\..\src\RBAZoneOperator.cpp" />
+    <ClCompile Include="..\..\..\src\RBAZoneSet.cpp" />
+    <ClCompile Include="..\..\..\src\RBAZoneSetImpl.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{4C711A76-D47F-4E7A-A833-5068E79C76B3}</ProjectGuid>
+    <RootNamespace>rba</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>..\..\..\include\rba;..\..\..\include\model;..\..\..\src;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+    <TargetName>$(ProjectName)d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IncludePath>..\..\..\include\rba;..\..\..\include\model;..\..\..\src;$(VC_IncludePath);$(WindowsSDK_IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>..\..\..\include\rba;..\..\..\include\model;..\..\..\src;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <TargetName>$(ProjectName)32d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>..\..\..\include\rba;..\..\..\include\model;..\..\..\src;$(VC_IncludePath);$(WindowsSDK_IncludePath);</IncludePath>
+    <TargetName>$(ProjectName)32</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy "$(TargetPath)" ..\..\..\lib\.</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>copy "$(TargetPath)" ..\..\..\lib\.</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetPath)" ..\..\..\lib\.</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalOptions>/source-charset:utf-8 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy "$(TargetPath)" ..\..\..\lib\.</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
